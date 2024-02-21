@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liquid Dispensing Calculator</title>
+    <style>
+        .result-box {
+            background-color: #e6f0ff;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .result-value {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liquid Dispensing Calculator</h1>
+    <form id="calculator-form">
+        <label for="body-weight">Body Weight (lb):</label>
+        <input type="number" step="0.01" id="body-weight" required><br><br>
+
+        <label for="dose">Dose (mg/lb):</label>
+        <input type="number" step="0.01" id="dose" required><br><br>
+
+        <label for="concentration">Concentration (mg/mL):</label>
+        <input type="number" step="0.01" id="concentration" required><br><br>
+
+        <label for="time-per-day">Time per Day:</label>
+        <input type="number" step="1" id="time-per-day" required><br><br>
+
+        <label for="days">Days:</label>
+        <input type="number" step="1" id="days" required><br><br>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
